@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { question } from "../data/Question";
 
 interface indexProp {
@@ -13,7 +13,6 @@ export default function ShowQuestion({
   isFinish,
   addAnswer,
 }: indexProp) {
-  const [answerIndex, setAnswerIndex] = useState(0);
   const [textAn, setTextAn] = useState<string>("");
   const [selectIndexBtn, setSelectIndexBtn] = useState<number | null>(null);
 
@@ -31,7 +30,6 @@ export default function ShowQuestion({
     addAnswer(textAn);
     setSelectIndexBtn(null);
     setTextAn("");
-    console.log(textAn);
   };
 
   return (
@@ -46,7 +44,6 @@ export default function ShowQuestion({
               <button
                 key={index}
                 onClick={() => {
-                  setAnswerIndex(index);
                   handleClickAnswer(index, item.content);
                   console.log(item.content);
                 }}
