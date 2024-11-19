@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./App.css";
 import ShowQuestion from "./components/ShowQuestion";
 import ResultScore from "./components/ResultScore";
 function App() {
