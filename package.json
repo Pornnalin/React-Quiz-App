@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Pornnalin.github.io/React-Quiz-App",
+  "homepage": "https://pornnalin.github.io/React-Quiz-App",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
